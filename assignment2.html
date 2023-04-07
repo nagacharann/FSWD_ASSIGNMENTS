@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        const a=10;
+        console.log(a)
+
+        var string1="good evening everyone",k=10;
+        console.log(string1 +  k)
+
+      const age = 12;
+      const name = "Charan cherry"
+      console.log(age)
+      console.log(name)
+      console.log( typeof age)
+      console.log( typeof name)
+
+      const array =['RRR','JOHN WICK','NAME3']
+      console.log(array)
+      console.log(typeof array)
+     console.log(array.length)
+     array.pop()
+     console.log(array)
+
+     array.push('name5','name3','name4')
+     console.log(array)
+
+   
+
+     const myClass = {
+        name:"FSWD",
+       totalstudents:50,
+       classtype:{
+        type:"virtual",
+        platform:"zoom",
+        time:"18:40PM"
+       }
+     }
+     console.log(myClass)
+     console.log(typeof myClass)
+
+     console.warn('array has 5 elements')
+     window.alert('array length cannot exeed 5 elements')
+
+  
+     function greet(time,alert,strngthofclass,Livestrngth=45){
+        console.log("Good evening every one " + "today class timings are " + time)
+        console.log(alert)
+        console.log("Strength of class is " + strngthofclass)
+        console.log("Live strength of today class is " + Livestrngth)  
+        console.log(myClass)
+        console.log(array)
+     }
+
+     greet("18:40 to 19:40"," Today is the  last day to complete the registation for the class","60")
+     greet(myClass)
+
+     const ak = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+        function iterate(currentValue, currentIndex) {
+            return currentValue
+        }
+        const newArr = ak.gitmap(iterate)
+        console.log(newArr)
+    </script>
+</body>
+</html>
