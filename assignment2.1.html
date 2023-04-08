@@ -19,6 +19,163 @@
       console.log(t)
       var t = 40
 
+      var x = 10
+      if (true){
+        x=15
+      }
+      console.log(x)
+
+     var x=10
+      if (false){
+        x=15
+      }
+      console.log(x)
+
+      var x=10
+      if (true){
+      let x=15
+      }
+      console.log(x)
+
+      let d = 19
+      if (true) {
+        let d=35
+        console.log(d)
+      }
+      console.log(d)
+
+      var p = 190
+      if (true) {
+        var p=350
+        console.log(p)
+      }
+      console.log(p)
+
+      var q = 1901
+      if (true) {
+       
+        console.log(q)
+      }
+
+      var q=3501
+      console.log(q)
+
+      let c=10
+      let e=c
+      e=20
+      console.log(e)
+      console.log(c)
+      console.log({c,e})
+
+        let a =[1,2,3,4,5,6]
+        let j=a
+        console.log(j)
+
+        a.push(7,8,9,10,12)
+        console.log(a)
+        a.pop()
+        console.log(a)
+
+        a.unshift(13,14)
+        console.log(a)
+        a.shift()
+        console.log(a)
+
+        let l =[1,2,3,4,5,6,8,9,10,100]
+        let u=l.push(154)
+        console.log(u)
+        console.log(l)
+
+        let o =[1,2,3,4,5,6,8,9,10,100]
+        let m=o.pop()
+        console.log(m)
+        console.log(o)
+
+        let w =[1,2,3,4,5,6]
+        let f=w
+        f.push('something')
+        console.log(f)
+        console.log(w)
+
+        let g=[4,5,6,7,8,9]
+        let h=[]
+        for(i=0;i<g.length;i++){
+            h.push(g[i])
+        }
+
+        h.push('nothing')
+        console.log(g)
+        console.log(h)
+
+        const a1={
+            name:'together',
+        }
+        const a2=a1
+        console.log(a1)
+        console.log(a2)
+
+        const b1={
+            name:'together',
+        }
+        const b2 = b1
+        b2.name = 'rather'
+        console.log(b1)
+        console.log(b2)
+
+        console.log('.foreach')
+
+        const z =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t']
+
+        function iterate (currentvalue,currentindex){
+            console.log(currentvalue,currentindex)
+        }
+        z.forEach(iterate)
+
+        console.log('.map')
+
+        const r =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t']
+
+             function iterate (currentvalue,currentindex){
+               console.log(currentvalue,currentindex)
+                     }
+                  r.map(iterate)
+
+                  console.log('newArr foreach')
+
+                  const i1 =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t']
+
+                           function iterate (currentvalue,currentindex){
+                            
+                        }
+                  const newArr = i1.forEach(iterate)
+                      console.log(newArr)
+
+                      console.log('newArr map')
+
+                      const i4 =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t']
+
+                   function iterate (currentvalue,currentindex){  }
+                    const newArr1 = i4.map(iterate)
+                     console.log(newArr1)
+
+                     console.log('newArr map return')
+
+                         const i3 =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u']
+
+                        function iterate (currentvalue,currentindex){ return'nothing' }
+                          const newArr2 = i3.map(iterate)
+                           console.log(newArr2)
+
+                           console.log('newArr map return clone')
+
+const i2 =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u']
+
+function iterate (currentvalue,currentindex){ return currentvalue }
+ const newArr3 = i2.map(iterate)
+  console.log(newArr3)
+
+
+
     </script>
 </body>
 </html>
