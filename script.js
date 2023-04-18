@@ -14,8 +14,9 @@ const toggletheme = () =>{
   if(id==1){
       document.getElementById("text").innerHTML = "THEME:Dark"
       document.getElementsByName("button")[0].id=0;
+      
   }else{
-    
+
       document.getElementById("text").innerHTML = "THEME:Light"
       document.getElementsByName("button")[0].id=1;
   }
