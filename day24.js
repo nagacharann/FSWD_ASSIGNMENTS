@@ -7,7 +7,7 @@ const recipecontainer=document.querySelector('.results')
 const input=document.querySelector('input')
 const button=document.querySelector('button')
 
-const generatecard=(image,title,dishType,mealType,dietLabels,totalWeight,url)=>`<div style="width: 400px;" class='bg-white rounded-3xl shadow-xl overflow-hidden'>
+const generatecard=(image,title,dishType,mealType,dietLabels,totalWeight,url,ingredients)=>`<div style="width: 400px;" class='bg-white rounded-3xl shadow-xl overflow-hidden'>
 <div class='max-w-md '>
 
  <div style="height: 200px;  width:auto; background-image: url('${image}'); background-position: center; background-size: cover;" class="bg-red-100 w-full h-2/3"></div>
@@ -25,6 +25,7 @@ const generatecard=(image,title,dishType,mealType,dietLabels,totalWeight,url)=>`
         <li>Total Weight:${totalWeight.toFixed(2)}</li>
         
       </ul>
+
    
 
    
@@ -55,9 +56,10 @@ const hideloader=()=>{
       console.log(data)
       const recipes=data.hits
      recipecontainer.innerHTML="";
+
      recipes.forEach((recipe) => {
-      const {image,label,dishType,mealType,dietLabels,totalWeight,url}= recipe.recipe
-      recipecontainer.innerHTML+=generatecard(image,label,dishType,mealType,dietLabels,totalWeight,url)
+      const {image,label,dishType,mealType,dietLabels,totalWeight,url,ingredients}= recipe.recipe
+      recipecontainer.innerHTML+=generatecard(image,label,dishType,mealType,dietLabels,totalWeight,url,ingredients)
       
      });
         
